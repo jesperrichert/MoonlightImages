@@ -96,6 +96,26 @@
       "DisplayName": "Java 22",
       "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java22",
       "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 23",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java23",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 24",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java24",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 25",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java25",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 26",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java26",
+      "AutoPull": true
     }
   ]
 }

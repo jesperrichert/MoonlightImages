@@ -8,4 +8,4 @@ In this Folder you find all Runtimes
 - [Java](/runtimes/Java.json)
 - [C#](c#.json)
 - [Nginx](Nginx.json)
-- [LinuxServer](https://github.com/TNSStudio-HQ/MoonlightImages/blob/main/runtimes/LinuxServer.json)
+- [LinuxServer](https://github.com/jesperrichert/MoonlightImages/blob/main/runtimes/LinuxServer.json)

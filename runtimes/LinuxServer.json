@@ -1,14 +1,14 @@
 {
   "Name": "Linux Server",
   "Author": "contact@tnsjesper.xyz",
-  "UpdateUrl": "https://raw.githubusercontent.com/TNSStudio-HQ/MoonlightImages/main/runtimes/LinuxServer.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/main/runtimes/LinuxServer.json",
   "DonateUrl": "https://ko-fi.com/tnsjesper",
   "StartupCommand": "export SERVERPORT={{SERVER_PORT}}; export LOGINPASSWORD={{PASSWORD}}; bash /home/conatiner/installer.sh",
   "OnlineDetection": "Container is now ready",
   "StopCommand": "^SIGKILL",
   "InstallShell": "/bin/bash",
   "InstallDockerImage": "debian:latest",
-  "InstallScript": "#! /bin/bash\n\n\napt update -y\napt install curl tar git -y \n\ncurl -Lo installer.sh https://raw.githubusercontent.com/TNSStudio-HQ/MoonlightDockerImages/main/installer/linuxserver/installer.sh\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "InstallScript": "#! /bin/bash\n\n\napt update -y\napt install curl tar git -y \n\ncurl -Lo installer.sh https://raw.githubusercontent.com/jesperrichert/MoonlightDockerImages/main/installer/linuxserver/installer.sh\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
   "ParseConfiguration": "[]",
   "AllocationsNeeded": 1,
   "Variables": [
@@ -26,8 +26,8 @@
   "AllowDockerImageChange": false,
   "DockerImages": [
     {
-      "DisplayName": "ghcr.io/tnsstudio-hq/moonlightdockerimages:linuxserver",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:linuxserver",
+      "DisplayName": "ghcr.io/jesperrichert/moonlightdockerimages:linuxserver",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:linuxserver",
       "AutoPull": true
     }
   ]

@@ -1,7 +1,7 @@
 {
   "Name": "Folia",
   "Author": "hey@xyzjesper.dev",
-  "UpdateUrl": "https://raw.githubusercontent.com/xyzspace-dev/MoonlightImages/refs/heads/main/games/minecraft/Folia.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/refs/heads/main/games/minecraft/Folia.json",
   "DonateUrl": "https://ko-fi.com/xyzjesper",
   "StartupCommand": "java --add-modules=jdk.incubator.vector -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
   "OnlineDetection": "Done",
@@ -36,47 +36,67 @@
   "DockerImages": [
     {
       "DisplayName": "Java 19",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java19",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java19",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 20",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java20",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java20",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 21",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java21",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java21",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 22",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java22",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java22",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 8",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java8",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java8",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 11",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java11",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java11",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 16",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java16",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java16",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 17",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java17",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java17",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 18",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:java18",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java18",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 23",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java23",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 24",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java24",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 25",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java25",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 26",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java26",
       "AutoPull": true
     }
   ]

@@ -1,7 +1,7 @@
 {
   "Name": "NodeJS",
   "Author": "contact@tnsstudio.net",
-  "UpdateUrl": "https://raw.githubusercontent.com/TNSStudio-HQ/MoonlightImages/main/runtimes/NodeJS.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/main/runtimes/NodeJS.json",
   "DonateUrl": "https://ko-fi.com/tnsjesper",
   "StartupCommand": "npm install; echo -e \"NodeJS is now ready\"; node ${MAIN_FILE} ",
   "OnlineDetection": "NodeJS is now ready",
@@ -27,42 +27,57 @@
   "DockerImages": [
     {
       "DisplayName": "NodeJS 19",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs19",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs19",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 18",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs18",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs18",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 16",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs16",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs16",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 14",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs14",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs14",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 17",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs17",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs17",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 20",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs20",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs20",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 21",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs21",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs21",
       "AutoPull": true
     },
     {
       "DisplayName": "NodeJS 22",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs22",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs22",
+      "AutoPull": true
+    },
+     {
+      "DisplayName": "NodeJS 23",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs23",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "NodeJS 24",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs24",
+      "AutoPull": true
+    },
+     {
+      "DisplayName": "NodeJS 26",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs26",
       "AutoPull": true
     }
   ]

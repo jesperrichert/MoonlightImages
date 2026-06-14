@@ -1,7 +1,7 @@
 {
   "Name": "Bun",
   "Author": "dm@xyzjesper.dev",
-  "UpdateUrl": "https://raw.githubusercontent.com/xyzspace-dev/MoonlightImages/main/runtimes/Bun.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/main/runtimes/Bun.json",
   "DonateUrl": "https://ko-fi.com/xyzjesper",
   "StartupCommand": "npm install; echo -e \"NodeJS is now ready\"; node ${MAIN_FILE} ",
   "OnlineDetection": "NodeJS is now ready",
@@ -27,7 +27,12 @@
   "DockerImages": [
     {
       "DisplayName": "Bun 1.2.19",
-      "Name": "ghcr.io/xyzspace-dev/moonlightdockerimages:bun1.2.19",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:bun1.2.19",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Bun 1.3.14",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:bun1.3.14",
       "AutoPull": true
     }
   ]

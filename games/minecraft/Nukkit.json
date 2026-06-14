@@ -8,7 +8,7 @@
   "StopCommand": "stop",
   "InstallShell": "/bin/ash",
   "InstallDockerImage": "alpine",
-  "InstallScript": "#!/bin/ash\r\n\r\napk add wget openssl\r\n\r\ncd /mnt/server\r\n\r\nif [ ! -z \"${DL_PATH}\" ]; then\r\n    MODIFIED_DOWNLOAD=`eval echo $(echo ${DL_PATH} | sed -e 's/{{/${/g' -e 's/}}/}/g')`\r\n    wget ${MODIFIED_DOWNLOAD} -O ${SERVER_JARFILE}\r\nelif [ -z \"${NUKKIT_VERSION}\" ] || [ \"${NUKKIT_VERSION}\" == \"latest\" ]; then\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nelse\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/${NUKKIT_VERSION}/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nfi\r\n\r\nif [ ! -f nukkit.yml ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/extra/bedrock/nukkit.yml\r\nfi\r\n\r\nif [ ! -f server.properties ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/extra/bedrock/server.properties\r\nfi\r\n\r\necho -s \"Install completed!\"",
+  "InstallScript": "#!/bin/ash\r\n\r\napk add wget openssl\r\n\r\ncd /mnt/server\r\n\r\nif [ ! -z \"${DL_PATH}\" ]; then\r\n    MODIFIED_DOWNLOAD=`eval echo $(echo ${DL_PATH} | sed -e 's/{{/${/g' -e 's/}}/}/g')`\r\n    wget ${MODIFIED_DOWNLOAD} -O ${SERVER_JARFILE}\r\nelif [ -z \"${NUKKIT_VERSION}\" ] || [ \"${NUKKIT_VERSION}\" == \"latest\" ]; then\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nelse\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/${NUKKIT_VERSION}/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nfi\r\n\r\nif [ ! -f nukkit.yml ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/data/bedrock/nukkit.yml\r\nfi\r\n\r\nif [ ! -f server.properties ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/data/bedrock/server.properties\r\nfi\r\n\r\necho -s \"Install completed!\"",
   "ParseConfiguration": "[{\"Type\":\"properties\",\"File\":\"server.properties\",\"Configuration\":{\"server-ip\":\"0.0.0.0\",\"enable-query\":\"true\",\"server-port\":\"{{SERVER_PORT}}\",\"query.port\":\"{{SERVER_PORT}}\"}}]",
   "AllocationsNeeded": 1,
   "Variables": [
@@ -86,6 +86,26 @@
     {
       "DisplayName": "Java 22",
       "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java22",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 23",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java23",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 24",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java24",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 25",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java25",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Java 26",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java26",
       "AutoPull": true
     }
   ]

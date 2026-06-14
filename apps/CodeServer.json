@@ -1,7 +1,7 @@
 {
   "Name": "Code Server",
   "Author": "Jesper Richert",
-  "UpdateUrl": "https://raw.githubusercontent.com/TNSStudio-HQ/MoonlightImages/main/apps/CodeServer.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/main/apps/CodeServer.json",
   "DonateUrl": "https:ko-fi.com/tnsjesper",
   "StartupCommand": "sh .local/lib/code-server-{{VERSION}}/bin/code-server",
   "OnlineDetection": "HTTP server listening on",
@@ -36,7 +36,7 @@
   "DockerImages": [
     {
       "DisplayName": "NodeJS 18",
-      "Name": "ghcr.io/tnsstudio-hq/moonlightdockerimages:nodejs18",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:nodejs18",
       "AutoPull": true
     }
   ]
