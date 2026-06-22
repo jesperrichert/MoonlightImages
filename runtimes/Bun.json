@@ -1,8 +1,8 @@
 {
   "Name": "Bun",
-  "Author": "dm@xyzjesper.dev",
+  "Author": "dm@jespersen.zip.dev",
   "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/main/runtimes/Bun.json",
-  "DonateUrl": "https://ko-fi.com/xyzjesper",
+  "DonateUrl": "https://ko-fi.com/jespersen.zip",
   "StartupCommand": "npm install; echo -e \"NodeJS is now ready\"; node ${MAIN_FILE} ",
   "OnlineDetection": "NodeJS is now ready",
   "StopCommand": "^C",

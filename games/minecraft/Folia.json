@@ -1,8 +1,8 @@
 {
   "Name": "Folia",
-  "Author": "hey@xyzjesper.dev",
+  "Author": "hey@jespersen.zip.dev",
   "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/refs/heads/main/games/minecraft/Folia.json",
-  "DonateUrl": "https://ko-fi.com/xyzjesper",
+  "DonateUrl": "https://ko-fi.com/jespersen.zip",
   "StartupCommand": "java --add-modules=jdk.incubator.vector -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
   "OnlineDetection": "Done",
   "StopCommand": "stop",

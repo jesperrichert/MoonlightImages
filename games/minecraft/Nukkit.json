@@ -1,14 +1,14 @@
 {
   "Name": "Nukkit",
-  "Author": "contact@nexocrew.com",
-  "UpdateUrl": "https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/games/minecraft/Nukkit.json",
+  "Author": "contact@jespersen.zip",
+  "UpdateUrl": "https://raw.githubusercontent.com/jesperrichert/MoonlightImages/refs/heads/main/games/minecraft/Nukkit.json",
   "DonateUrl": "https://ko-fi.com/jesforhe",
   "StartupCommand": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar nukkit-1.0-SNAPSHOT.jar",
   "OnlineDetection": "\\)!\\ ",
   "StopCommand": "stop",
   "InstallShell": "/bin/ash",
   "InstallDockerImage": "alpine",
-  "InstallScript": "#!/bin/ash\r\n\r\napk add wget openssl\r\n\r\ncd /mnt/server\r\n\r\nif [ ! -z \"${DL_PATH}\" ]; then\r\n    MODIFIED_DOWNLOAD=`eval echo $(echo ${DL_PATH} | sed -e 's/{{/${/g' -e 's/}}/}/g')`\r\n    wget ${MODIFIED_DOWNLOAD} -O ${SERVER_JARFILE}\r\nelif [ -z \"${NUKKIT_VERSION}\" ] || [ \"${NUKKIT_VERSION}\" == \"latest\" ]; then\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nelse\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/${NUKKIT_VERSION}/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nfi\r\n\r\nif [ ! -f nukkit.yml ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/data/bedrock/nukkit.yml\r\nfi\r\n\r\nif [ ! -f server.properties ]; then\r\n    wget https://raw.githubusercontent.com/nexocrew-HQ/MoonlightImages/refs/heads/main/data/bedrock/server.properties\r\nfi\r\n\r\necho -s \"Install completed!\"",
+  "InstallScript": "#!/bin/ash\r\n\r\napk add wget openssl\r\n\r\ncd /mnt/server\r\n\r\nif [ ! -z \"${DL_PATH}\" ]; then\r\n    MODIFIED_DOWNLOAD=`eval echo $(echo ${DL_PATH} | sed -e 's/{{/${/g' -e 's/}}/}/g')`\r\n    wget ${MODIFIED_DOWNLOAD} -O ${SERVER_JARFILE}\r\nelif [ -z \"${NUKKIT_VERSION}\" ] || [ \"${NUKKIT_VERSION}\" == \"latest\" ]; then\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nelse\r\n    wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/${NUKKIT_VERSION}/artifact/target/nukkit-1.0-SNAPSHOT.jar \r\nfi\r\n\r\nif [ ! -f nukkit.yml ]; then\r\n    wget https://raw.githubusercontent.com/jesperrichert/MoonlightImages/refs/heads/main/data/bedrock/nukkit.yml\r\nfi\r\n\r\nif [ ! -f server.properties ]; then\r\n    wget https://raw.githubusercontent.com/jesperrichert/MoonlightImages/refs/heads/main/data/bedrock/server.properties\r\nfi\r\n\r\necho -s \"Install completed!\"",
   "ParseConfiguration": "[{\"Type\":\"properties\",\"File\":\"server.properties\",\"Configuration\":{\"server-ip\":\"0.0.0.0\",\"enable-query\":\"true\",\"server-port\":\"{{SERVER_PORT}}\",\"query.port\":\"{{SERVER_PORT}}\"}}]",
   "AllocationsNeeded": 1,
   "Variables": [
@@ -45,47 +45,47 @@
   "DockerImages": [
     {
       "DisplayName": "Java 11",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java11",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java11",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 16",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java16",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java16",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 8",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java8",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java8",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 17",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java17",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java17",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 18",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java18",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java18",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 19",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java19",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java19",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 20",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java20",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java20",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 21",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java21",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java21",
       "AutoPull": true
     },
     {
       "DisplayName": "Java 22",
-      "Name": "ghcr.io/nexocrew-hq/moonlightdockerimages:java22",
+      "Name": "ghcr.io/jesperrichert/moonlightdockerimages:java22",
       "AutoPull": true
     },
     {
